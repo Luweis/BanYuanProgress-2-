@@ -1,3 +1,6 @@
+
+
+
 //
 //  ViewController.swift
 //  BanYuanProgress
@@ -9,15 +12,31 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var vie:BanYuanProgress?
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.backgroundColor = UIColor.redColor()
+        let vie = BanYuanProgress()
+      
+        vie.frame = CGRectMake(100, 100, 300,300)
+        self.vie = vie
+        vie.raidus = 100
+        vie.linewidth = 13
+        vie.lineColor = UIColor.whiteColor()
+        vie.progress = 0.8
+        vie.backgroundColor = UIColor.yellowColor()
+       // vie.bottomLineColor = UIColor.redColor()
+   
+        self.view.addSubview(vie)
+//         vie.progress = 0
+//         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "change", userInfo: nil, repeats: true)
     }
-
+//    func change(){
+//        vie?.progress += 0.1
+//    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // Dispose of any resources that can be recreated. frame:CGRectMake(0, 0, 50, 50)
     }
 
 

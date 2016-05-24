@@ -14,6 +14,7 @@
 		11A087121CE2FB390006D2D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A087101CE2FB390006D2D3 /* LaunchScreen.storyboard */; };
 		11A0871D1CE2FB390006D2D3 /* BanYuanProgressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A0871C1CE2FB390006D2D3 /* BanYuanProgressTests.swift */; };
 		11A087281CE2FB390006D2D3 /* BanYuanProgressUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A087271CE2FB390006D2D3 /* BanYuanProgressUITests.swift */; };
+		11A087361CE2FB8C0006D2D3 /* BanYuanProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A087351CE2FB8B0006D2D3 /* BanYuanProgress.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		11A087231CE2FB390006D2D3 /* BanYuanProgressUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BanYuanProgressUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A087271CE2FB390006D2D3 /* BanYuanProgressUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanYuanProgressUITests.swift; sourceTree = "<group>"; };
 		11A087291CE2FB390006D2D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11A087351CE2FB8B0006D2D3 /* BanYuanProgress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanYuanProgress.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				11A087071CE2FB390006D2D3 /* AppDelegate.swift */,
 				11A087091CE2FB390006D2D3 /* ViewController.swift */,
 				11A0870B1CE2FB390006D2D3 /* Main.storyboard */,
+				11A087351CE2FB8B0006D2D3 /* BanYuanProgress.swift */,
 				11A0870E1CE2FB390006D2D3 /* Assets.xcassets */,
 				11A087101CE2FB390006D2D3 /* LaunchScreen.storyboard */,
 				11A087131CE2FB390006D2D3 /* Info.plist */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					11A087031CE2FB390006D2D3 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = D2EWB8EXPP;
 					};
 					11A087171CE2FB390006D2D3 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -258,6 +262,7 @@
 			files = (
 				11A0870A1CE2FB390006D2D3 /* ViewController.swift in Sources */,
 				11A087081CE2FB390006D2D3 /* AppDelegate.swift in Sources */,
+				11A087361CE2FB8C0006D2D3 /* BanYuanProgress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,9 +402,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BanYuanProgress/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = qianduoduo.BanYuanProgress;
+				PRODUCT_BUNDLE_IDENTIFIER = qianduoduo.BanYuanProg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -408,9 +414,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = BanYuanProgress/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = qianduoduo.BanYuanProgress;
+				PRODUCT_BUNDLE_IDENTIFIER = qianduoduo.BanYuanProg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -482,6 +489,7 @@
 				11A0872E1CE2FB390006D2D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11A0872F1CE2FB390006D2D3 /* Build configuration list for PBXNativeTarget "BanYuanProgressTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +498,7 @@
 				11A087311CE2FB390006D2D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		11A087321CE2FB390006D2D3 /* Build configuration list for PBXNativeTarget "BanYuanProgressUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +507,7 @@
 				11A087341CE2FB390006D2D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
